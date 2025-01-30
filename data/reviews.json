@@ -1,0 +1,122 @@
+[
+    {
+        "user_id": "user1",
+        "book_id": "book1",
+        "rating": 5,
+        "review_text": "Excellent book! Highly recommend it."
+    },
+    {
+        "user_id": "user2",
+        "book_id": "book1",
+        "rating": 4,
+        "review_text": "Great book, but it could have been a bit shorter."
+    },
+    {
+        "user_id": "user3",
+        "book_id": "book2",
+        "rating": 3,
+        "review_text": "Decent book, but the storyline was a bit predictable."
+    },
+    {
+        "user_id": "user4",
+        "book_id": "book2",
+        "rating": 5,
+        "review_text": "I loved it! The characters were well-developed."
+    },
+    {
+        "user_id": "user5",
+        "book_id": "book3",
+        "rating": 4,
+        "review_text": "Really good read, though I expected a different ending."
+    },
+    {
+        "user_id": "user1",
+        "book_id": "book3",
+        "rating": 2,
+        "review_text": "The book was quite boring and slow-paced."
+    },
+    {
+        "user_id": "user2",
+        "book_id": "book4",
+        "rating": 5,
+        "review_text": "Fantastic! I couldn't put it down!"
+    },
+    {
+        "user_id": "user3",
+        "book_id": "book4",
+        "rating": 4,
+        "review_text": "Really enjoyed it, but it took a while to pick up."
+    },
+    {
+        "user_id": "user4",
+        "book_id": "book5",
+        "rating": 3,
+        "review_text": "It was okay, but the pacing was a little off."
+    },
+    {
+        "user_id": "user5",
+        "book_id": "book5",
+        "rating": 4,
+        "review_text": "Pretty good, but the middle of the book dragged a bit."
+    },
+    {
+        "user_id": "user1",
+        "book_id": "book6",
+        "rating": 5,
+        "review_text": "Amazing! I loved the world-building and the plot twists."
+    },
+    {
+        "user_id": "user2",
+        "book_id": "book6",
+        "rating": 4,
+        "review_text": "Great book! But I felt the ending was a bit rushed."
+    },
+    {
+        "user_id": "user3",
+        "book_id": "book7",
+        "rating": 2,
+        "review_text": "Not my type of book. I didn't enjoy it at all."
+    },
+    {
+        "user_id": "user4",
+        "book_id": "book7",
+        "rating": 5,
+        "review_text": "An exciting and fast-paced read. Would recommend!"
+    },
+    {
+        "user_id": "user5",
+        "book_id": "book8",
+        "rating": 1,
+        "review_text": "I couldn't finish it. It wasn't engaging."
+    },
+    {
+        "user_id": "user1",
+        "book_id": "book8",
+        "rating": 4,
+        "review_text": "Scary and atmospheric! A great horror novel."
+    },
+    {
+        "user_id": "user2",
+        "book_id": "book9",
+        "rating": 3,
+        "review_text": "It was an average mystery. Nothing special."
+    },
+    {
+        "user_id": "user3",
+        "book_id": "book9",
+        "rating": 5,
+        "review_text": "Excellent mystery. Kept me on edge the whole time."
+    },
+    {
+        "user_id": "user4",
+        "book_id": "book10",
+        "rating": 4,
+        "review_text": "A beautiful adventure with lots of heart."
+    },
+    {
+        "user_id": "user5",
+        "book_id": "book10",
+        "rating": 4,
+        "review_text": "Loved the adventure, but I wanted a bit more depth."
+    }
+]

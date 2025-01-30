@@ -1,0 +1,27 @@
+[
+    {
+        "_id": "user1",
+        "email": "user1@example.com",
+        "age": 25
+    },
+    {
+        "_id": "user2",
+        "email": "user2@example.com",
+        "age": 30
+    },
+    {
+        "_id": "user3",
+        "email": "user3@example.com",
+        "age": 22
+    },
+    {
+        "_id": "user4",
+        "email": "user4@example.com",
+        "age": 27
+    },
+    {
+        "_id": "user5",
+        "email": "user5@example.com",
+        "age": 24
+    }
+]

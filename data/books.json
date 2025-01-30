@@ -1,0 +1,173 @@
+[
+    {
+        "_id": "book1",
+        "title": "The Great Adventure",
+        "author": "John Doe",
+        "isbn": "978-3-16-148410-0",
+        "publish_date": "2021-01-15T00:00:00Z",
+        "genre": "Adventure",
+        "description": "A thrilling adventure story set in a fantastical world."
+    },
+    {
+        "_id": "book2",
+        "title": "Mystery of the Hidden Room",
+        "author": "Jane Smith",
+        "isbn": "978-3-16-148411-7",
+        "publish_date": "2020-08-20T00:00:00Z",
+        "genre": "Mystery",
+        "description": "A gripping mystery novel that keeps readers at the edge of their seats."
+    },
+    {
+        "_id": "book3",
+        "title": "Journey to the Unknown",
+        "author": "Alice Brown",
+        "isbn": "978-3-16-148412-4",
+        "publish_date": "2019-11-10T00:00:00Z",
+        "genre": "Sci-Fi",
+        "description": "A journey through space and time, uncovering the secrets of the universe."
+    },
+    {
+        "_id": "book4",
+        "title": "The Last Secret",
+        "author": "Robert Green",
+        "isbn": "978-3-16-148413-1",
+        "publish_date": "2021-06-30T00:00:00Z",
+        "genre": "Thriller",
+        "description": "A fast-paced thriller that delves into political conspiracy."
+    },
+    {
+        "_id": "book5",
+        "title": "A Tale of Two Worlds",
+        "author": "Emily White",
+        "isbn": "978-3-16-148414-8",
+        "publish_date": "2022-04-01T00:00:00Z",
+        "genre": "Fantasy",
+        "description": "A fantasy novel exploring the clash between two rival worlds."
+    },
+    {
+        "_id": "book6",
+        "title": "Falling Stars",
+        "author": "Chris Adams",
+        "isbn": "978-3-16-148415-5",
+        "publish_date": "2018-09-14T00:00:00Z",
+        "genre": "Romance",
+        "description": "A heartwarming romance that explores the power of love."
+    },
+    {
+        "_id": "book7",
+        "title": "The Final Countdown",
+        "author": "David Harris",
+        "isbn": "978-3-16-148416-2",
+        "publish_date": "2023-03-25T00:00:00Z",
+        "genre": "Action",
+        "description": "An action-packed story of survival in a dystopian future."
+    },
+    {
+        "_id": "book8",
+        "title": "Eternal Night",
+        "author": "Sophia Lee",
+        "isbn": "978-3-16-148417-9",
+        "publish_date": "2020-07-07T00:00:00Z",
+        "genre": "Horror",
+        "description": "A chilling horror novel that will haunt readers long after they've finished."
+    },
+    {
+        "_id": "book9",
+        "title": "Whispers in the Dark",
+        "author": "Michael Gray",
+        "isbn": "978-3-16-148418-6",
+        "publish_date": "2017-12-12T00:00:00Z",
+        "genre": "Mystery",
+        "description": "A gripping mystery novel full of twists and turns."
+    },
+    {
+        "_id": "book10",
+        "title": "The Traveler's Diary",
+        "author": "Sarah Johnson",
+        "isbn": "978-3-16-148419-3",
+        "publish_date": "2022-05-22T00:00:00Z",
+        "genre": "Adventure",
+        "description": "A captivating diary of a lone traveler exploring the world."
+    },
+    {
+        "_id": "book11",
+        "title": "Into the Abyss",
+        "author": "Tom Brown",
+        "isbn": "978-3-16-148420-9",
+        "publish_date": "2018-03-11T00:00:00Z",
+        "genre": "Sci-Fi",
+        "description": "A thrilling science fiction story set in the deep ocean."
+    },
+    {
+        "_id": "book12",
+        "title": "Shattered Dreams",
+        "author": "Olivia Clark",
+        "isbn": "978-3-16-148421-6",
+        "publish_date": "2021-09-17T00:00:00Z",
+        "genre": "Drama",
+        "description": "A tragic drama about love, loss, and redemption."
+    },
+    {
+        "_id": "book13",
+        "title": "The Silent Witness",
+        "author": "Kevin White",
+        "isbn": "978-3-16-148422-3",
+        "publish_date": "2019-01-05T00:00:00Z",
+        "genre": "Thriller",
+        "description": "A psychological thriller about a witness who has remained silent for years."
+    },
+    {
+        "_id": "book14",
+        "title": "Redemption Road",
+        "author": "Laura Brown",
+        "isbn": "978-3-16-148423-0",
+        "publish_date": "2022-02-18T00:00:00Z",
+        "genre": "Action",
+        "description": "A high-octane action story about a man's quest for redemption."
+    },
+    {
+        "_id": "book15",
+        "title": "The Golden Key",
+        "author": "James Green",
+        "isbn": "978-3-16-148424-7",
+        "publish_date": "2020-10-09T00:00:00Z",
+        "genre": "Fantasy",
+        "description": "A magical tale about a mysterious key that unlocks the secrets of the universe."
+    },
+    {
+        "_id": "book16",
+        "title": "Moonlit Shadows",
+        "author": "Emma Harris",
+        "isbn": "978-3-16-148425-4",
+        "publish_date": "2021-11-14T00:00:00Z",
+        "genre": "Romance",
+        "description": "A romance novel set under the moonlit skies of an ancient city."
+    },
+    {
+        "_id": "book17",
+        "title": "City of Dreams",
+        "author": "Daniel King",
+        "isbn": "978-3-16-148426-1",
+        "publish_date": "2023-06-01T00:00:00Z",
+        "genre": "Drama",
+        "description": "A dramatic exploration of life in a fast-paced city."
+    },
+    {
+        "_id": "book18",
+        "title": "Secrets of the Past",
+        "author": "Elizabeth Wright",
+        "isbn": "978-3-16-148427-8",
+        "publish_date": "2019-02-23T00:00:00Z",
+        "genre": "Mystery",
+        "description": "A mystery surrounding old secrets and dark family histories."
+    },
+    {
+        "_id": "book19",
+        "title": "The Edge of Tomorrow",
+        "author": "Chris White",
+        "isbn": "978-3-16-148428-5",
+        "publish_date": "2022-07-14T00:00:00Z",
+        "genre": "Sci-Fi",
+        "description": "A futuristic tale about the consequences of time travel."
+    }
+]
