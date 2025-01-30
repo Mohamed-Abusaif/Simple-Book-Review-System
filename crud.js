@@ -2,6 +2,7 @@ import { client, connectDB } from "./data/connection.js";
 import { get } from "http";
 
 import booksDataJSON from "./data/books.json" assert { type: "json" };
+import reviewsDataJSON from "./data/reviews.json" assert { type: "json" };
 
 export async function getBooks(res) {
   await connectDB();
@@ -53,3 +54,50 @@ export async function deleteBooks(res) {
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(JSON.stringify(deletedBooks));
 }
+//--------------------------------------------------------------------------------------------//
+export async function addReview(res, review) {
+  await connectDB();
+  const database = client.db("cluster0");
+  const reviews = database.collection("reviews");
+  const newReview = reviewsDataJSON;
+
+  let result = [];
+  newReview.forEach(async (review) => {
+    result.push(await reviews.insertOne(review));
+  });
+  await reviews.insertMany(newReview);
+
+  res.writeHead(201, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(result));
+}
+
+export async function getReviews(res) {
+  await connectDB();
+  const database = client.db("cluster0");
+  const reviews = database.collection("reviews");
+  const allReviews = await reviews.find({}).toArray();
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(allReviews));
+}
+
+export async function updateReview(res, reviewId, updatedReview) {
+  await connectDB();
+  const database = client.db("cluster0");
+  const reviews = database.collection("reviews");
+  const result = await reviews.updateOne(
+    { _id: reviewId },
+    { $set: updatedReview }
+  );
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.end("Review updated");
+}
+
+export async function deleteReview(res, reviewId) {
+  await connectDB();
+  const database = client.db("cluster0");
+  const reviews = database.collection("reviews");
+  const result = await reviews.deleteOne({ _id: reviewId });
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(result));
+}
+//--------------------------------------------------------------------------------------------//
