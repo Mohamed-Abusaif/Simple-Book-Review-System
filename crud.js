@@ -1,8 +1,10 @@
 import { client, connectDB } from "./data/connection.js";
 import { get } from "http";
 
-import booksDataJSON from "./data/books.json" assert { type: "json" };
-import reviewsDataJSON from "./data/reviews.json" assert { type: "json" };
+const booksDataJSON = require("./data/books.json");
+const reviewsDataJSON = require("./data/reviews.json");
+// import booksDataJSON from "./data/books.json" assert { type: "json" };
+// import reviewsDataJSON from "./data/reviews.json" assert { type: "json" };
 
 export async function getBooks(res) {
   await connectDB();
