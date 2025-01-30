@@ -1,10 +1,12 @@
 import { client, connectDB } from "./data/connection.js";
 import { get } from "http";
 
-const booksDataJSON = require("./data/books.json");
-const reviewsDataJSON = require("./data/reviews.json");
-// import booksDataJSON from "./data/books.json" assert { type: "json" };
-// import reviewsDataJSON from "./data/reviews.json" assert { type: "json" };
+import { readFileSync } from "fs";
+
+const booksDataJSON = JSON.parse(readFileSync("./data/books.json", "utf-8"));
+const reviewsDataJSON = JSON.parse(
+  readFileSync("./data/reviews.json", "utf-8")
+);
 
 export async function getBooks(res) {
   await connectDB();
