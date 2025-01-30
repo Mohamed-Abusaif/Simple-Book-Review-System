@@ -10,8 +10,8 @@ const reviewsDataJSON = JSON.parse(
   fs.readFileSync(path.resolve("public", "reviews.json"), "utf-8")
 );
 
-console.log(booksDataJSON);
-console.log(reviewsDataJSON);
+// console.log(booksDataJSON);
+// console.log(reviewsDataJSON);
 
 export async function getBooks(res) {
   await connectDB();
@@ -26,19 +26,28 @@ export async function getBooks(res) {
   res.end(JSON.stringify(totalObject));
 }
 
-export async function addBooks(req, res) {
+export async function addBooks(res) {
   await connectDB();
   const database = client.db("cluster0");
   const books = database.collection("books");
   const newBooks = booksDataJSON;
-  let result = [];
-  newBooks.forEach(async (book) => {
-    result.push(await books.insertOne(book));
-  });
-  await books.insertMany(newBooks);
+  // let result = [];
+  // newBooks.forEach(async (book) => {
+  //   result.push(await books.insertOne(book));
+  // });
+  // await books.insertMany(newBooks);
 
+  await books.insertOne({
+    title: "Secrets of the Past",
+    author: "Elizabeth Wright",
+    isbn: "978-3-16-148427-8",
+    publish_date: "2019-02-23T00:00:00Z",
+    genre: "Mystery",
+    description: "A mystery surrounding old secrets and dark family histories.",
+  });
   res.writeHead(200, { "Content-Type": "application/json" });
-  res.end(JSON.stringify(result));
+  // res.end(JSON.stringify({ result: "Book added" }));
+  res.end("Book added");
 }
 
 export async function updateBooks(res) {
@@ -46,7 +55,7 @@ export async function updateBooks(res) {
   const database = client.db("cluster0");
   const books = database.collection("books");
   const updatedBooks = await books.updateOne(
-    { title: "Secrets of the Past" },
+    { _id: "50555555555555557777777777755555555555" },
     { $set: { title: "Secrets of the Past (Updated)" } }
   );
   res.writeHead(200, { "Content-Type": "application/json" });
