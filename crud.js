@@ -1,12 +1,17 @@
 import { client, connectDB } from "./data/connection.js";
+import * as fs from "fs";
+import path from "path";
 import { get } from "http";
 
-import { readFileSync } from "fs";
-
-const booksDataJSON = JSON.parse(readFileSync("./data/books.json", "utf-8"));
-const reviewsDataJSON = JSON.parse(
-  readFileSync("./data/reviews.json", "utf-8")
+const booksDataJSON = JSON.parse(
+  fs.readFileSync(path.resolve("public", "books.json"), "utf-8")
 );
+const reviewsDataJSON = JSON.parse(
+  fs.readFileSync(path.resolve("public", "reviews.json"), "utf-8")
+);
+
+console.log(booksDataJSON);
+console.log(reviewsDataJSON);
 
 export async function getBooks(res) {
   await connectDB();
